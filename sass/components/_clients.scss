@@ -1,0 +1,36 @@
+/* Clients */
+.section.clients {
+  padding: 94px 0px;
+}
+.clients-icons li + li {
+  margin-left: 30px;
+}
+.clients-icons li {
+  display: inline-flex;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--bg-icon);
+  margin-right: -4px;
+  border-radius: 4px;
+  fill: var(--bg-icon);
+    transition-property: border-color, fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
+}
+.logo {
+  fill: var(--bg-icon);
+}
+.client-link:hover .logo,
+.client-link:focus .logo {
+  fill: var(--accent-color);
+}

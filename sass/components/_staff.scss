@@ -1,0 +1,82 @@
+/* Staff */
+.section-staff {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--staff-bdrcolor);
+}
+.staff-name {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+.staff-persons {
+  background-color: var(--primari-white-color);
+  box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024,
+    0px 2px 1px #0000001f;
+}
+.staff-persons:not(:first-child) {
+  margin-left: 30px;
+}
+.staff-box {
+  padding: 30px 32px;
+}
+.staff-box .name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.staff-name .position {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.social-team {
+  display: inline-flex;
+  justify-content: center;
+}
+.social-team li + li {
+  margin-left: 10px;
+}
+.person-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primari-white-color);
+  border-radius: 50%;
+  fill: var(--bg-icon);
+    transition-property: background-color, fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function); 
+}
+.person-link:hover,
+.person-link:focus {
+  background-color: var(--accent-color);
+}
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  fill: var(--bg-icon);
+}
+.person-link:hover .instagram,
+.person-link:focus .instagram,
+.person-link:hover .twitter,
+.person-link:focus .twitter,
+.person-link:hover .facebook,
+.person-link:focus .facebook,
+.person-link:hover .linkedin,
+.person-link:focus .linkedin,
+.person-link:focus .icon-linkedin-icon {
+  fill: var(--primari-white-color);
+}
+
+
